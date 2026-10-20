@@ -10,7 +10,7 @@ ROOT = Path(__file__).resolve().parent.parent
 
 def test_obscured_markers_exist():
     assert Unit.CORE_STATS_OBSCURED == 0x104
-    assert Monster.CACHE_OBSCURED == 0x3C0  # 1.00.27: Unit grew +0x8 again (0x3B8->0x3C0)
+    assert Monster.CACHE_OBSCURED == 0x3EC  # 1.2.8: Unit grew +0x2C (0x3C0->0x3EC), tracks STAGE_KEY 0x3DC->0x408
 
 
 def test_no_reader_module_reads_obscured_offsets():
